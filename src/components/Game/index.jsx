@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Counter } from '@/components/Counter';
+import Counter from '@/components/Counter';
 import { useParams } from '@/hooks/useParams';
 
 export const Game = () => {
