@@ -8,9 +8,11 @@ import {
   FaQuestion,
 } from 'react-icons/fa';
 
+import cn from 'clsx';
+
 import styles from './style.module.scss';
 
-export const Item = ({ name }) => {
+export const Item = ({ name, open, isActive }) => {
   let icon = null;
   switch (name) {
     case 'ball':
@@ -36,7 +38,7 @@ export const Item = ({ name }) => {
       icon = <FaQuestion />;
   }
   return (
-    <div className={styles.card}>
+    <div className={cn(styles.card, isActive && styles.active)} onClick={open}>
       <div className={styles.front}>
         <FaQuestion />
       </div>
