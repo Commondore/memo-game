@@ -1,0 +1,13 @@
+:root {
+  --primary: #388ab9;
+  --font: "Ubuntu", sans-serif;
+  --width: 900px;
+  --gutter: 15px;
+  --text-color: #222;
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.2 var(--font);
+  color: var(--text-color);
+}
